@@ -1,8 +1,9 @@
 import streamlit as st
+import os
 import pickle
 import pandas as pd
 import requests
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 def fetch_poster(movie_id):
     response=requests.get("https://api.themoviedb.org/3/movie/{}?api_key=b02d67f0815f92077d467e5f6b410342&language=en-US".format(movie_id))
     data=response.json()
@@ -22,10 +23,15 @@ def recommend(movie):
         recommended_movies_posters.append(fetch_poster(movie_id))
     return recommended_movies,recommended_movies_posters
 
-movies_dict=pickle.load(open('movie_dict.pkl','rb'))
+movies_dict = pickle.load(
+    open(os.path.join(BASE_DIR, 'movie_dict.pkl'), 'rb')
+)
+
 movies=pd.DataFrame(movies_dict)
 
-similarity=pickle.load(open('similarity.pkl','rb'))
+similarity = pickle.load(
+    open(os.path.join(BASE_DIR, 'similarity.pkl'), 'rb')
+)
 st.title('Movie Recommender System')
 
 selected_movie_name=st.selectbox(
