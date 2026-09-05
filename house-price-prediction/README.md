@@ -1,4 +1,19 @@
+
+
+
+
+
 # House Price Prediction
+
+<p align="center">
+  <img src="./data/page0.png" alt="House Price Prediction App" width="900">
+</p>
+
+<p align="center">
+  <a href="https://house-price-prediction-okox01.streamlit.app/">
+    🚀 <strong>Try the Live App</strong>
+  </a>
+</p>
 
 An end-to-end Machine Learning project that predicts house sale prices using the Ames Housing dataset.
 
