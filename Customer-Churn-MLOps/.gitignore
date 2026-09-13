@@ -4,3 +4,7 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 logs/
+mlruns/
+mlflow.db
+notebooks/mlruns/
+notebooks/mlflow.db
