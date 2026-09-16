@@ -8,3 +8,4 @@ mlruns/
 mlflow.db
 notebooks/mlruns/
 notebooks/mlflow.db
+.DS_Store
