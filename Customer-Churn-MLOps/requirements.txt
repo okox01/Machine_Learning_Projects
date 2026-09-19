@@ -36,9 +36,12 @@ graphql-core==3.2.12
 graphql-relay==3.2.0
 greenlet==3.5.5
 h11==0.16.0
+httpcore2==2.13.0
+httpx2==2.13.0
 huey==3.4.0
 idna==3.19
 importlib_metadata==9.0.1
+iniconfig==2.3.0
 ipykernel==7.3.0
 ipython==9.17.1
 ipython_pygments_lexers==1.1.1
@@ -69,6 +72,7 @@ pandas==3.0.5
 parso==0.8.7
 pillow==12.3.0
 platformdirs==4.11.8
+pluggy==1.6.0
 prettytable==3.18.0
 prompt_toolkit==3.0.53
 propcache==0.5.2
@@ -83,6 +87,7 @@ pydantic==2.13.5
 pydantic_core==2.46.5
 Pygments==2.21.0
 pyparsing==3.3.2
+pytest==9.1.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.3
 pywin32==312
@@ -101,6 +106,7 @@ starlette==1.6.0
 threadpoolctl==3.6.0
 tornado==6.5.8
 traitlets==5.16.1
+truststore==0.10.4
 typing-inspection==0.4.4
 typing_extensions==4.16.0
 tzdata==2026.3
